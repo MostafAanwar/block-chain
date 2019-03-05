@@ -3,15 +3,20 @@ import java.util.Date;
 import java.util.*;
 
 public class Block {
-    private static long timeStamp;
-    public String hash;
-    public String previousHash;
+    private static String timeStamp;
+    int index;
     private String data;
+    String hash;
+    String previousHash;
 
-    public Block(String data, String previousHash) {
+    Block(String data, String previousHash) {
         this.data = data;
         this.previousHash = previousHash;
-        timeStamp = new Date().getTime();
+        this.timeStamp = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date());
+    }
+
+    Block() {
+        timeStamp = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date());
     }
 
     public static void main(String[] args) {
