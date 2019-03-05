@@ -2,6 +2,6 @@ public class Main {
 
     public static void main(String[] args) {
         //System.out.println("Hello World!");
-        Block b = new Block();
+        //Block b = new Block();
     }
 }
