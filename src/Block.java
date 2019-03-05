@@ -18,6 +18,7 @@ public class Block {
     }
 
     String hash_block() {
+        //returns hash i think
         return "";
     }
 }
