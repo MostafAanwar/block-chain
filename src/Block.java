@@ -1,18 +1,20 @@
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.*;
 
 public class Block {
-    Block() {
+    private static String timeStamp;
+    int index;
+    String[] data;
+    String hash;
+    String prevHash;
 
+    Block() {
+        timeStamp = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date());
     }
 
     public static void main(String[] args) {
-        int index;
-        String timeStamp = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date());
         System.out.println(timeStamp);
-        String[] data;
-        String hash;
-        String prevHash;
     }
 
     String hash_block() {
